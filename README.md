@@ -157,3 +157,4 @@ model User {
 
 
 - Now we have to create inside app > auth > Nav.tsx 
+- Auth secret find using terminal - crypto.randomBytes(64).toString('hex');
