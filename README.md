@@ -16,3 +16,20 @@ model Post {
   published Boolean @default(false)
 }
 ```
+
+6. install npm install @prisma/client
+7. then create a file called client.js within prisma folder
+
+````js
+import { PrismaClient } from "@prisma/client";
+const client = globalThis.prisma || new PrismaClient();
+if (ProcessingInstruction.env.NODE_ENV !== "production")
+  globalThis.prisma = client;
+export default client;
+}
+```
+
+````
+8. in terminal install { npx prisma migrate dev } it will insert data into postgraeql railway server
+
+## next auth
