@@ -150,3 +150,10 @@ model User {
   // hearts        Heart[]
 }
 ```
+
+- npx prisma migrate dev
+
+- all the data will be updated in to postgresql server on railway 
+
+
+- Now we have to create inside app > auth > Nav.tsx 
